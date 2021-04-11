@@ -1,60 +1,59 @@
 :root {
   --body-default-text-color: #757575;
-  --body-default-header-color: #212121;
-  --header-background-color: #ffffff;
-  --header-border-color: #ececec;
-  --footer-background-color: #2f303a;
-  --header-logo-color: #2196f3;
-  --header-logo-text-color: #000000;
-  --footer-logo-text-color: #ffffff;
-
-  --header-navigation-hover-color: #2196f3;
-  --header-navigation-text-color: #212121;
-  --header-address-hover-color: #2196f3;
   --header-address-text-color: #757575;
-  --footer-address-color: #ffffff;
-  --footer-text-color: rgba(255, 255, 255, 0.6);
-  --footer-icon-color: rgba(255, 255, 255, 0.1);
-
-  --main-hero-background-color: #c4c4c4;
-  --main-hero-background-blackdrop: rgba(0, 0, 0, 0.2);
-  --main-hero-background: rgba(47, 48, 58, 0.4);
-  --main-hero-text-color: #ffffff;
-
-  --main-features-header-color: #212121;
-  --main-features-background-color: #f5f4fa;
   --main-features-text-color: #757575;
-  --main-functions-label-text-color: #ffffff;
-  --main-functions-label-background-color: rgba(47, 48, 58, 0.8);
+  --main-team-text-color: #757575;
+  --portfolio-project-list-text-color: #757575;
 
-  --main-team-background-color: #f5f4fa;
-  --main-team-photo-background-color: #ffffff;
+  --body-default-header-color: #212121;
+  --header-navigation-text-color: #212121;
+  --main-features-header-color: #212121;
   --main-team-header-color: #212121;
   --main-team-name-color: #212121;
-  --main-team-text-color: #757575;
+  --portfolio-project-list-header-color: #212121;
+  --portfolio-button-text-color: #212121;
 
-  --main-clients-icons-color: #afb1b8;
-  --main-clients-icons-hover-color: #2196f3;
-
+  --header-background-color: #ffffff;
+  --footer-logo-text-color: #ffffff;
+  --footer-address-color: #ffffff;
+  --main-hero-text-color: #ffffff;
+  --main-functions-label-text-color: #ffffff;
+  --main-team-photo-background-color: #ffffff;
   --main-default-background-color: #ffffff;
-  --main-team-background-color: #f5f4fa;
-  --main-button-color: #2196f3;
-  --main-button-hover-color: #188ce8;
   --main-button-text-color: #ffffff;
-  --main-icon-color: #afb1b8;
   --main-icon-hover-color: #ffffff;
-
   --portfolio-default-background-color: #ffffff;
   --portfolio-project-list-background-color: #ffffff;
-  --portfolio-project-list-header-color: #212121;
-  --portfolio-project-list-text-color: #757575;
-  --portfolio-project-list-border-color: #eeeeee;
-  --portfolio-project-list-hover-background-color: rgba(33, 150, 243, 0.9);
-
-  --portfolio-button-color: #f5f4fa;
-  --portfolio-button-text-color: #212121;
-  --portfolio-button-hover-color: #2196f3;
   --portfolio-button-hover-text-color: #ffffff;
+
+  --header-logo-color: #2196f3;
+  --header-navigation-hover-color: #2196f3;
+  --header-address-hover-color: #2196f3;
+  --main-button-color: #2196f3;
+  --main-clients-icons-hover-color: #2196f3;
+  --portfolio-button-hover-color: #2196f3;
+
+  --main-clients-icons-color: #afb1b8;
+  --main-icon-color: #afb1b8;
+
+  --main-features-background-color: #f5f4fa;
+  --main-team-background-color: #f5f4fa;
+  --main-team-background-color: #f5f4fa;
+  --portfolio-button-color: #f5f4fa;
+
+  --main-hero-background-color: #c4c4c4;
+  --header-border-color: #ececec;
+  --footer-background-color: #2f303a;
+  --main-button-hover-color: #188ce8;
+  --portfolio-project-list-border-color: #eeeeee;
+  --header-logo-text-color: #000000;
+
+  --footer-text-color: rgba(255, 255, 255, 0.6);
+  --footer-icon-color: rgba(255, 255, 255, 0.1);
+  --main-hero-background-blackdrop: rgba(0, 0, 0, 0.2);
+  --main-hero-background: rgba(47, 48, 58, 0.4);
+  --main-functions-label-background-color: rgba(47, 48, 58, 0.8);
+  --portfolio-project-list-hover-background-color: rgba(33, 150, 243, 0.9);
 }
 html {
   box-sizing: border-box;
