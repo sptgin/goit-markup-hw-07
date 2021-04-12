@@ -26,21 +26,21 @@
               >Web<span class="header__link-logo-color">Studio</span></a
             >
             <ul class="header__list header__list-center">
-              <li class="header__item_menu-margin">
+              <li class="header__item-menu-margin">
                 <a
                   class="header__link-navigation title__navigation animation__color current"
                   href="./"
                   >Студия</a
                 >
               </li>
-              <li class="header__item_menu-margin">
+              <li class="header__item-menu-margin">
                 <a
                   class="header__link-navigation title__navigation animation__color"
                   href="./portfolio.html"
                   >Портфолио</a
                 >
               </li>
-              <li class="header__item_menu-margin">
+              <li class="header__item-menu-margin">
                 <a
                   class="header__link-navigation title__navigation animation__color"
                   href="./"
@@ -50,7 +50,7 @@
             </ul>
           </nav>
           <ul class="header__list header__list-margin">
-            <li class="header__item_address-margin">
+            <li class="header__item-address-margin">
               <a
                 class="header__link-address title__address animation__color"
                 href="mailto:info@devstudio.com"
@@ -66,7 +66,7 @@
                 info@devstudio.com</a
               >
             </li>
-            <li class="header__item_address-margin">
+            <li class="header__item-address-margin">
               <a
                 class="header__link-address title__address animation__color"
                 href="tel:+380961111111"
@@ -88,13 +88,17 @@
     <!-- Main -->
     <main>
       <!-- Секция "Шапка" -->
-      <section class="hero-section">
+      <section class="hero">
         <div class="container">
-          <h1 class="hero-section-header">
+          <h1 class="hero__title title__header-h1">
             Эффективные решения <br />
             для вашего бизнеса
           </h1>
-          <button class="hero-section-button" type="button" data-modal-open>
+          <button
+            class="button hero__button title__button animation__background-color"
+            type="button"
+            data-modal-open
+          >
             Заказать услугу
           </button>
         </div>
@@ -188,61 +192,65 @@
         </div>
       </div>
       <!-- Секция "Особенности" -->
-      <section class="features-section">
+      <section class="features">
         <div class="container">
-          <ul class="features-section-list">
-            <li class="features-section-list-item">
-              <div class="features-section-set">
-                <svg class="features-icons">
+          <ul class="features__list">
+            <li class="features__item">
+              <div class="features__view">
+                <svg class="features__icon">
                   <use
                     href="./images/icons.svg#icon-color-features-icon01-antenna"
                   ></use>
                 </svg>
               </div>
-              <h3 class="featutes-section-header">Внимание к деталям</h3>
-              <p class="featutes-section-text">
+              <h3 class="featutes__title title__header-h3">
+                Внимание к деталям
+              </h3>
+              <p class="featutes__text title__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
-            <li class="features-section-list-item">
-              <div class="features-section-set">
-                <svg class="features-icons">
+            <li class="features__item">
+              <div class="features__view">
+                <svg class="features__icon">
                   <use
                     href="./images/icons.svg#icon-color-features-icon02-clock"
                   ></use>
                 </svg>
               </div>
-              <h3 class="featutes-section-header">Пунктуальность</h3>
-              <p class="featutes-section-text">
+              <h3 class="featutes__title title__header-h3">Пунктуальность</h3>
+              <p class="featutes__text title__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
-            <li class="features-section-list-item">
-              <div class="features-section-set">
-                <svg class="features-icons">
+            <li class="features__item">
+              <div class="features__view">
+                <svg class="features__icon">
                   <use
                     href="./images/icons.svg#icon-color-features-icon03-diagram"
                   ></use>
                 </svg>
               </div>
-              <h3 class="featutes-section-header">Планирование</h3>
-              <p class="featutes-section-text">
+              <h3 class="featutes__title title__header-h3">Планирование</h3>
+              <p class="featutes__text title__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
-            <li class="features-section-list-item">
-              <div class="features-section-set">
-                <svg class="features-icons">
+            <li class="features__item">
+              <div class="features__view">
+                <svg class="features__icon">
                   <use
                     href="./images/icons.svg#icon-color-features-icon04-astronaut"
                   ></use>
                 </svg>
               </div>
-              <h3 class="featutes-section-header">Современные технологии</h3>
-              <p class="featutes-section-text">
+              <h3 class="featutes__title title__header-h3">
+                Современные технологии
+              </h3>
+              <p class="featutes__text title__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -251,42 +259,42 @@
         </div>
       </section>
       <!-- Секция "Чем мы занимаемся" -->
-      <section class="functions-section">
+      <section class="functions">
         <div class="container">
-          <h2 class="functions-section-header">Чем мы занимаемся</h2>
-          <ul class="functions-section-list">
-            <li class="functions-section-list-item">
+          <h2 class="functions__title title__header-h2">Чем мы занимаемся</h2>
+          <ul class="functions__list">
+            <li class="functions__item">
               <img
                 src="./images/webstudio-mainpage-foto001.jpg"
                 alt="Фото планшета"
                 width="370"
               />
-              <div class="function-section-list-item-label">
-                <p class="function-section-list-item-text">
+              <div class="functions__label">
+                <p class="function__text title__header-light">
                   Десктопные приложения
                 </p>
               </div>
             </li>
-            <li class="functions-section-list-item">
+            <li class="functions__item">
               <img
                 src="./images/webstudio-mainpage-foto002.jpg"
                 alt="Фото ноутбука"
                 width="370"
               />
-              <div class="function-section-list-item-label">
-                <p class="function-section-list-item-text">
+              <div class="functions__label">
+                <p class="function__text title__header-light">
                   Мобильные приложения
                 </p>
               </div>
             </li>
-            <li class="functions-section-list-item">
+            <li class="functions__item">
               <img
                 src="./images/webstudio-mainpage-foto003.jpg"
                 alt="Фото планшета с палитрой"
                 width="370"
               />
-              <div class="function-section-list-item-label">
-                <p class="function-section-list-item-text">
+              <div class="functions__label">
+                <p class="function__text title__header-light">
                   Дизайнерские решения
                 </p>
               </div>
