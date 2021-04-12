@@ -108,7 +108,6 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
 .title__header-light {
   color: var(--body-light-text-color);
   font-weight: 500;
@@ -118,11 +117,24 @@ body {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-
+.title__header-name {
+  color: var(--body-default-header-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
 .title__text {
   color: var(--body-default-text-color);
   font-size: 14px;
   line-height: 1.71;
+  letter-spacing: 0.03em;
+}
+.title__text-label {
+  color: var(--body-default-text-color);
+  font-size: 16px;
+  line-height: 1.18;
   letter-spacing: 0.03em;
 }
 .title__button {
@@ -132,7 +144,6 @@ body {
   line-height: 1.87;
   letter-spacing: 0.06em;
 }
-
 .button {
   align-items: center;
   text-align: center;
@@ -140,6 +151,11 @@ body {
   cursor: pointer;
   border: none;
   border-radius: 4px;
+}
+.icon-social {
+  width: 20px;
+  height: 20px;
+  fill: var(--body-default-icon-color);
 }
 
 .animation__color {
@@ -622,48 +638,29 @@ body {
 }
 
 /* Секция "Наша команда" */
-
-.team-section {
-  display: block;
-  text-align: center;
-  width: auto;
+.team {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--body-light-background-color);
-  font-size: 16px;
-  line-height: 1.18;
-  letter-spacing: 0.03em;
-  color: var(--body-default-text-color);
 }
-
-.team-section-header {
+.team__title {
   margin-top: 0;
   margin-bottom: 50px;
-  color: var(--body-default-header-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
-
-.team-section-list {
+.team__list {
   display: flex;
   list-style: none;
-  text-align: center;
   padding-left: 0;
   padding-right: 0;
   margin-top: 0;
   margin-bottom: 0;
 }
-
-.team-section-list img {
+.team__list img {
   display: block;
   margin-top: 0;
   margin-bottom: 0;
 }
-
-.team-section-list-item {
+.team__item {
   display: block;
   width: 270px;
   background-color: var(--body-default-background-color);
@@ -671,32 +668,22 @@ body {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
-.team-section-list-item:not(:last-child) {
+.team__item:not(:last-child) {
   margin-right: 30px;
 }
-
-.team-section-list-card {
+.team__label {
+  text-align: center;
   padding: 30px 20px 30px 20px;
 }
-
-.team-section-name {
+.team__name {
   margin-top: 0;
   margin-bottom: 0;
-  color: var(--body-default-header-color);
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.18;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
-
-.team-section-text {
+.team__text {
   margin-top: 10px;
   margin-bottom: 0;
 }
-
-.team-section-social-list {
+.team__list-social {
   display: inline-flex;
   list-style: none;
   padding-left: 0;
@@ -704,39 +691,34 @@ body {
   margin-top: 16px;
   margin-bottom: 0;
 }
-.team-section-social-list-link {
+.team__link-social {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.team-section-social-list-link:hover .social-icons,
-.team-section-social-list-link:active .social-icons,
-.team-section-social-list-link:focus .social-icons {
+.team__item-social:not(:last-child) {
+  margin-right: 10px;
+}
+.team__icon {
+  fill: var(--body-default-icon-color);
+}
+.team__link-social:hover .team__icon,
+.team__link-social:active .team__icon,
+.team__link-social:focus .team__icon {
   fill: var(--body-light-text-color);
 }
-
-.team-section-social-list-link:hover,
-.team-section-social-list-link:active,
-.team-section-social-list-link:focus {
+.team__link-social:hover,
+.team__link-social:active,
+.team__link-social:focus {
   background-color: var(--body-default-logo-color);
 }
 
-.team-section-social-list-item:not(:last-child) {
-  margin-right: 10px;
-}
+/* Секция 'Постоянные клиенты' */
 
-.social-icons {
-  width: 20px;
-  height: 20px;
-  fill: var(--body-default-icon-color);
-  transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
-}
-
+/*  */
 .clients-section {
   display: block;
   text-align: center;
