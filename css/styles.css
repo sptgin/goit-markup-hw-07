@@ -126,6 +126,7 @@ body {
   letter-spacing: 0.03em;
 }
 .title__text {
+  font-style: normal;
   color: var(--body-default-text-color);
   font-size: 14px;
   line-height: 1.71;
@@ -163,6 +164,9 @@ body {
 }
 .animation__background-color {
   transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
+}
+.animation__border-color {
+  transition: 250ms border-color cubic-bezier(0.4, 0, 0.2, 1);
 }
 .animation__fill {
   transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
@@ -718,31 +722,16 @@ body {
 
 /* Секция 'Постоянные клиенты' */
 
-/*  */
-.clients-section {
-  display: block;
-  text-align: center;
+.clients {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--body-default-background-color);
 }
-.clients-section-header {
+.clients__title {
   margin-top: 0;
   margin-bottom: 50px;
-  color: var(--body-default-header-color);
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  letter-spacing: 0.03em;
 }
-
-.clients-icons {
-  fill: var(--body-default-icon-color);
-  transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-section-list {
+.clients__list {
   display: flex;
   list-style: none;
   text-align: center;
@@ -751,7 +740,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-.clients-section-list-item {
+.clients__item {
   display: block;
   height: 90px;
   width: 170px;
@@ -760,119 +749,92 @@ body {
   border-radius: 4px;
   transition: 250ms border-color cubic-bezier(0.4, 0, 0.2, 1);
 }
-.clients-section-list-item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
+.clients__item:hover,
+.clients__item:active,
+.clients__item:focus {
+  border-color: var(--body-default-logo-color);
+}
+.clients__icon {
+  fill: var(--body-default-icon-color);
+}
 
-.clients-section-list-link {
+.clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 170px;
   height: 90px;
 }
-
-.clients-section-list-link:hover .clients-icons,
-.clients-section-list-link:active .clients-icons,
-.clients-section-list-link:focus .clients-icons {
+.clients__link:hover .clients__icon,
+.clients__link:active .clients__icon,
+.clients__link:focus .clients__icon {
   fill: var(--body-default-logo-color);
 }
 
-.clients-section-list-item:hover,
-.clients-section-list-item:active,
-.clients-section-list-item:focus {
-  border-color: var(--body-default-logo-color);
-}
-
-/*   */
-
 /* Секция "Подвал" */
-.footer-section {
+.footer {
   width: auto;
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--footer-background-color);
 }
-
-.footer-section-data {
+.footer__body {
   display: flex;
   align-items: baseline;
 }
-
-.logo-link.footer {
+.footer__link-logo {
   display: inline-block;
+  text-decoration: none;
   margin-right: 0;
   margin-bottom: 20px;
+}
+.footer__link-logo-color {
   color: var(--body-light-text-color);
 }
-
-.footer-address-card {
+.footer__address {
   margin-right: 70px;
 }
-
-.footer-section-list {
+.footer__list {
   display: flex;
   padding-left: 0;
   padding-right: 0;
   margin-top: 0;
   margin-bottom: 0;
-
   flex-direction: column;
   list-style: none;
 }
-
-.footer-section-list-item:not(:last-child) {
+.footer__item:not(:last-child) {
   margin-bottom: 9px;
 }
-
-.footer-section-address {
+.footer__link {
   text-decoration: none;
+}
+.footer__link-light {
   color: var(--body-light-text-color);
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-section-address:hover,
-.footer-section-address:active,
-.footer-section-address:focus {
-  color: var(--body-default-logo-color);
-}
-
-.footer-section-text {
-  text-decoration: none;
+.footer__link-dark {
   color: var(--footer-text-color);
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
-  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-section-text:hover,
-.footer-section-text:active,
-.footer-section-text:focus {
+.footer__link:hover,
+.footer__link:active,
+.footer__link:focus {
   color: var(--body-default-logo-color);
 }
-
-.footer-section-social-card {
+.footer__social {
   margin-top: 0;
   margin-bottom: 0;
 }
-.footer-section-social-name {
+.footer__title {
   margin-top: 0;
   margin-bottom: 20px;
   padding-top: 0;
   padding-bottom: 0;
   color: var(--body-light-text-color);
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 }
-
-.footer-section-social-list {
+.footer__list-social {
   display: inline-flex;
   list-style: none;
   padding-left: 0;
@@ -880,7 +842,7 @@ body {
   margin-top: 0;
   margin-bottom: 0;
 }
-.footer-section-social-list-item {
+.footer__item-social {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -889,48 +851,40 @@ body {
   width: 44px;
   height: 44px;
 }
-.footer-section-social-list-link {
+.footer__item-social:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer__link-social {
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer-section-social-list-item:not(:last-child) {
-  margin-right: 10px;
-}
-
-.footer-section-social-list-link:hover,
-.footer-section-social-list-link:active,
-.footer-section-social-list-link:focus {
+.footer__link-social:hover,
+.footer__link-social:active,
+.footer__link-social:focus {
   background-color: var(--body-default-logo-color);
 }
-.footer-social-icons {
-  width: 20px;
-  height: 20px;
+.footer__icon {
   fill: var(--body-light-text-color);
 }
-
-.footer-section-mail-subscribe-form {
+.footer__form {
   margin-right: 0;
   margin-left: auto;
 }
-
-.footer-section-mail-subscribe-form-label {
+.footer__label {
   display: block;
   margin-top: 0;
   margin-bottom: 20px;
   padding-top: 0;
   padding-bottom: 0;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
   color: var(--body-light-text-color);
 }
+
+/*  */
 
 .footer-section-mail-subscribe-input {
   width: 358px;
