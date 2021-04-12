@@ -89,40 +89,55 @@
     <main>
       <h1 class="visually-hidden">Проекты</h1>
       <!-- Секция фильтр проектов -->
-      <section class="portfolio-project-section">
+      <section class="portfolio">
         <h2 class="visually-hidden">Фильтр проектов</h2>
         <div class="container">
-          <ul class="portfolio-filtr-project-list">
-            <li class="portfolio-filtr-project-list-item">
-              <button class="portfolio-filtr-project-button" type="button">
+          <ul class="portfolio__filter">
+            <li class="portfolio__item">
+              <button
+                class="portfolio__button title__button-light"
+                type="button"
+              >
                 Все
               </button>
             </li>
-            <li class="portfolio-filtr-project-list-item">
-              <button class="portfolio-filtr-project-button" type="button">
+            <li class="portfolio__item">
+              <button
+                class="portfolio__button title__button-light"
+                type="button"
+              >
                 Веб-сайты
               </button>
             </li>
-            <li class="portfolio-filtr-project-list-item">
-              <button class="portfolio-filtr-project-button" type="button">
+            <li class="portfolio__item">
+              <button
+                class="portfolio__button title__button-light"
+                type="button"
+              >
                 Приложения
               </button>
             </li>
-            <li class="portfolio-filtr-project-list-item">
-              <button class="portfolio-filtr-project-button" type="button">
+            <li class="portfolio__item">
+              <button
+                class="portfolio__button title__button-light"
+                type="button"
+              >
                 Дизайн
               </button>
             </li>
-            <li class="portfolio-filtr-project-list-item">
-              <button class="portfolio-filtr-project-button" type="button">
+            <li class="portfolio__item">
+              <button
+                class="portfolio__button title__button-light"
+                type="button"
+              >
                 Маркетинг
               </button>
             </li>
           </ul>
           <!-- Секция список проектов -->
           <h2 class="visually-hidden">Список проектов</h2>
-          <ul class="portfolio-project-list">
-            <li class="portfolio-project-list-item">
+          <ul class="portfolio__list">
+            <li class="portfolio__card">
               <a href="./portfolio.html" class="portfolio-project-link">
                 <div class="portfolio-project-image">
                   <img
@@ -139,13 +154,13 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-project-list-card">
-                  <h3 class="portfolio-project-header">Технокряк</h3>
-                  <p class="portfolio-project-text">Веб-сайт</p>
+                <div class="portfolio__about">
+                  <h3 class="portfolio__header-about">Технокряк</h3>
+                  <p class="portfolio__text-about">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-project-list-item">
+            <li class="portfolio__card">
               <a href="./portfolio.html" class="portfolio-project-link">
                 <div class="portfolio-project-image">
                   <img
@@ -161,15 +176,15 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-project-list-card">
-                  <h3 class="portfolio-project-header">
+                <div class="portfolio__about">
+                  <h3 class="portfolio__header-about">
                     Постер New Orlean vs Golden Star
                   </h3>
-                  <p class="portfolio-project-text">Дизайн</p>
+                  <p class="portfolio__text-about">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-project-list-item">
+            <li class="portfolio__card">
               <a href="./portfolio.html" class="portfolio-project-link">
                 <div class="portfolio-project-image">
                   <img
@@ -186,13 +201,13 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-project-list-card">
-                  <h3 class="portfolio-project-header">Ресторан Seafood</h3>
-                  <p class="portfolio-project-text">Приложение</p>
+                <div class="portfolio__about">
+                  <h3 class="portfolio__header-about">Ресторан Seafood</h3>
+                  <p class="portfolio__text-about">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-project-list-item">
+            <li class="portfolio__card">
               <a href="./portfolio.html" class="portfolio-project-link">
                 <div class="portfolio-project-image">
                   <img
@@ -209,13 +224,13 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-project-list-card">
-                  <h3 class="portfolio-project-header">Проект Prime</h3>
-                  <p class="portfolio-project-text">Маркетинг</p>
+                <div class="portfolio__about">
+                  <h3 class="portfolio__header-about">Проект Prime</h3>
+                  <p class="portfolio__text-about">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-project-list-item">
+            <li class="portfolio__card">
               <a href="./portfolio.html" class="portfolio-project-link">
                 <div class="portfolio-project-image">
                   <img
@@ -232,13 +247,13 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-project-list-card">
-                  <h3 class="portfolio-project-header">Проект Boxes</h3>
-                  <p class="portfolio-project-text">Приложение</p>
+                <div class="portfolio__about">
+                  <h3 class="portfolio__header-about">Проект Boxes</h3>
+                  <p class="portfolio__text-about">Приложение</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-project-list-item">
+            <li class="portfolio__card">
               <a href="./portfolio.html" class="portfolio-project-link">
                 <div class="portfolio-project-image">
                   <img
@@ -256,15 +271,15 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-project-list-card">
-                  <h3 class="portfolio-project-header">
+                <div class="portfolio__about">
+                  <h3 class="portfolio__header-about">
                     Inspiration has no Borders
                   </h3>
-                  <p class="portfolio-project-text">Веб-сайт</p>
+                  <p class="portfolio__text-about">Веб-сайт</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-project-list-item">
+            <li class="portfolio__card">
               <a href="./portfolio.html" class="portfolio-project-link">
                 <div class="portfolio-project-image">
                   <img
@@ -282,15 +297,15 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-project-list-card">
-                  <h3 class="portfolio-project-header">
+                <div class="portfolio__about">
+                  <h3 class="portfolio__header-about">
                     Издание Limited Edition
                   </h3>
-                  <p class="portfolio-project-text">Дизайн</p>
+                  <p class="portfolio__text-about">Дизайн</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-project-list-item">
+            <li class="portfolio__card">
               <a href="./portfolio.html" class="portfolio-project-link">
                 <div class="portfolio-project-image">
                   <img
@@ -306,13 +321,13 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-project-list-card">
-                  <h3 class="portfolio-project-header">Проект LAB</h3>
-                  <p class="portfolio-project-text">Маркетинг</p>
+                <div class="portfolio__about">
+                  <h3 class="portfolio__header-about">Проект LAB</h3>
+                  <p class="portfolio__text-about">Маркетинг</p>
                 </div>
               </a>
             </li>
-            <li class="portfolio-project-list-item">
+            <li class="portfolio__card">
               <a href="./portfolio.html" class="portfolio-project-link">
                 <div class="portfolio-project-image">
                   <img
@@ -329,9 +344,9 @@
                     </p>
                   </div>
                 </div>
-                <div class="portfolio-project-list-card">
-                  <h3 class="portfolio-project-header">Growing Business</h3>
-                  <p class="portfolio-project-text">Приложение</p>
+                <div class="portfolio__about">
+                  <h3 class="portfolio__header-about">Growing Business</h3>
+                  <p class="portfolio__text-about">Приложение</p>
                 </div>
               </a>
             </li>
@@ -340,85 +355,89 @@
       </section>
     </main>
     <!-- Секция "Подвал"-->
-    <footer class="footer-section">
+    <footer class="footer">
       <div class="container">
-        <div class="footer-section-data">
-          <div class="footer-address-card">
-            <a class="logo-link footer" href="./"
-              ><span class="logo-color">Web</span>Studio</a
+        <div class="footer__body">
+          <div class="footer__address">
+            <a class="footer__link-logo title__logo" href="./"
+              >Web<span class="footer__link-logo-color">Studio</span></a
             >
             <address>
-              <ul class="footer-section-list">
-                <li class="footer-section-list-item">
+              <ul class="footer__list">
+                <li class="footer__item">
                   <a
-                    class="footer-section-address"
+                    class="footer__link footer__link-light title__text animation__color"
                     href="http://maps.google.com/?q=г.Киев,пр-тЛесиУкраинки,26"
                     target="_blank"
                     rel="nofollow noreferrer"
                     >г. Киев, пр-т Леси Украинки, 26</a
                   >
                 </li>
-                <li class="footer-section-list-item">
-                  <a class="footer-section-text" href="mailto:info@example.com"
+                <li class="footer__item">
+                  <a
+                    class="footer__link footer__link-dark title__text animation__color"
+                    href="mailto:info@example.com"
                     >info@example.com</a
                   >
                 </li>
-                <li class="footer-section-list-item">
-                  <a class="footer-section-text" href="tel:+380961111111"
+                <li class="footer__item">
+                  <a
+                    class="footer__link footer__link-dark title__text animation__color"
+                    href="tel:+380961111111"
                     >+38 096 111 11 11</a
                   >
                 </li>
               </ul>
             </address>
           </div>
-          <div class="footer-section-social-card">
-            <p class="footer-section-social-name">присоединяйтесь</p>
+          <div class="footer__social">
+            <p class="footer__title title__header-h3">присоединяйтесь</p>
             <!-- список контактов в социальных сетях -->
-            <ul class="footer-section-social-list">
-              <li class="footer-section-social-list-item">
+            <ul class="footer__list-social">
+              <li class="footer__item-social">
                 <a
                   href="https://www.instagram.com"
-                  class="footer-section-social-list-link"
+                  class="footer__link-social animation__background-color"
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  <svg class="footer-social-icons">
+                  <svg class="footer__icon icon-social animation__fill">
                     <use href="./images/icons.svg#icon-social-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-section-social-list-item">
+              <li class="footer__item-social">
                 <a
                   href="https://www.twitter.com"
-                  class="footer-section-social-list-link"
+                  class="footer__link-social animation__background-color"
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  <svg class="footer-social-icons">
+                  <svg class="footer__icon icon-social animation__fill">
                     <use href="./images/icons.svg#icon-social-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-section-social-list-item">
+              <li class="footer__item-social">
                 <a
                   href="https://www.facebook.com"
-                  class="footer-section-social-list-link"
+                  class="footer__link-social animation__background-color"
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  <svg class="footer-social-icons">
+                  <svg class="footer__icon icon-social animation__fill">
                     <use href="./images/icons.svg#icon-social-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-section-social-list-item">
+              <li class="footer__item-social">
                 <a
                   href="https://www.linkedin.com"
-                  class="footer-section-social-list-link"
+                  class="footer__link-social animation__background-color"
                   target="_blank"
                   rel="noreferrer noopener"
                 >
-                  <svg class="footer-social-icons">
+                  <svg class="footer__icon icon-social animation__fill">
                     <use href="./images/icons.svg#icon-social-linkedin"></use>
                   </svg>
                 </a>
@@ -426,24 +445,21 @@
             </ul>
           </div>
           <!-- Форма ввода электронного адреса для подписки на рассылку -->
-          <div class="footer-section-mail-subscribe-form">
+          <div class="footer__form">
             <form action="./index.html">
-              <label class="footer-section-mail-subscribe-form-label">
+              <label class="footer__label title__header-h3">
                 Подпишитесь на рассылку
               </label>
               <input
-                class="footer-section-mail-subscribe-input"
+                class="footer__input title_input animation__border-color"
                 type="email"
                 name="subscride-email-address"
                 placeholder="E-mail"
               />
-              <button
-                class="footer-section-mail-subscribe-button"
-                type="submit"
-              >
-                <span class="footer-section-mail-subscribe-button-label">
+              <button class="footer__button button title__button" type="submit">
+                <span class="footer__label-button">
                   Подписаться
-                  <svg class="footer-subscribe-icons">
+                  <svg class="footer__icon-button">
                     <use href="./images/icons.svg#icon-send-plane"></use>
                   </svg>
                 </span>
