@@ -104,88 +104,79 @@
         </div>
       </section>
       <!-- Окно "Заказать услугу"-->
-      <div class="hero-section-modal-backdrop is-hidden" data-modal>
-        <div class="hero-section-modal">
-          <div class="hero-section-modal-close-button">
-            <button class="hero-section-modal-button-close" data-modal-close>
-              <svg class="modal-icons">
+      <div class="modal__backdrop is-hidden" data-modal>
+        <div class="modal">
+          <div class="modal__close">
+            <button class="modal__button-close" data-modal-close>
+              <svg class="modal__icon-close">
                 <use href="./images/icons.svg#icon-close-modal"></use>
               </svg>
             </button>
           </div>
-          <span class="hero-section-modal-header">
+          <span class="modal__header title__header-modal">
             Оставьте свои данные, мы вам перезвоним
           </span>
-          <form class="hero-section-modal-form" action="./index.html">
-            <div class="hero-section-modal-input-group">
-              <label class="hero-section-modal-input-label">
-                <span class="hero-section-modal-label-text">Имя</span>
-                <input
-                  class="hero-section-modal-input"
-                  type="text"
-                  name="order-username"
-                />
-                <svg class="hero-section-modal-input-icons">
+          <form class="modal__form" action="./index.html">
+            <div class="modal__group">
+              <label class="modal__input-label">
+                <span class="modal__input-text">Имя</span>
+                <input class="modal__input" type="text" name="order-username" />
+                <svg class="modal__icon-input">
                   <use href="./images/icons.svg#icon-person"></use>
                 </svg>
               </label>
-              <label class="hero-section-modal-input-label">
-                <span class="hero-section-modal-label-text">Телефон</span>
-                <input
-                  class="hero-section-modal-input"
-                  type="tel"
-                  name="order-phone"
-                />
-                <svg class="hero-section-modal-input-icons">
+              <label class="modal__input-label">
+                <span class="modal__input-text">Телефон</span>
+                <input class="modal__input" type="tel" name="order-phone" />
+                <svg class="modal__icon-input">
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
               </label>
-              <label class="hero-section-modal-input-label">
-                <span class="hero-section-modal-label-text">Почта</span>
-                <input
-                  class="hero-section-modal-input"
-                  type="email"
-                  name="order-email"
-                />
-                <svg class="hero-section-modal-input-icons">
+              <label class="modal__input-label">
+                <span class="modal__input-text">Почта</span>
+                <input class="modal__input" type="email" name="order-email" />
+                <svg class="modal__icon-input">
                   <use href="./images/icons.svg#icon-mail"></use>
                 </svg>
               </label>
-              <label class="hero-section-modal-comment-label">
-                <span class="hero-section-modal-label-text">Комментарий</span>
+              <label class="modal__comment-label">
+                <span class="modal__input-text">Комментарий</span>
                 <textarea
-                  class="hero-section-modal-comment-input"
+                  class="modal__comment"
                   name="order-comment"
                   rows="5"
                   placeholder="Введите текст"
                 ></textarea>
               </label>
             </div>
-            <label class="hero-section-modal-checkbox-label">
+            <label class="modal__checkbox-label">
               <input
-                class="hero-section-modal-checkbox-input"
+                class="modal__checkbox"
                 type="checkbox"
                 name="order-get-license"
                 value=""
               />
-              <span class="hero-section-modal-checkbox-label-text">
+              <span class="modal__checkbox-text">
                 Соглашаюсь с рассылкой и принимаю
                 <a
                   href="https://www.google.com"
-                  class="hero-section-license-link"
+                  class="modal__link"
                   target="_blank"
                   rel="noreferrer noopener"
                   >Условия договора</a
                 >
               </span>
-              <svg class="hero-section-modal-checkbox-icons">
+              <svg class="modal__icon-checkbox">
                 <use href="./images/icons.svg#icon-box0"></use>
               </svg>
-              <svg class="hero-section-modal-checkbox-icons-checked">
+              <svg class="modal__icon-checkbox-checked">
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
             </label>
-            <button class="hero-section-modal-submit-button" type="submit">
+            <button
+              class="button modal__button title__button animation__background-color"
+              type="submit"
+            >
               Отправить
             </button>
           </form>
