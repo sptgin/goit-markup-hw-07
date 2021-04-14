@@ -576,10 +576,7 @@ body {
   transition: 250ms opacity cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.header__link-navigation.current,
-.header__link-navigation:hover,
-.header__link-navigation:active,
-.header__link-navigation:focus {
+.header__link-navigation.current, .header__link-navigation:hover, .header__link-navigation:active, .header__link-navigation:focus {
   color: #2196f3;
 }
 
@@ -602,9 +599,7 @@ body {
   margin-right: 10px;
 }
 
-.header__link-address:hover,
-.header__link-address:active,
-.header__link-address:focus {
+.header__link-address:hover, .header__link-address:active, .header__link-address:focus {
   color: #2196f3;
 }
 
@@ -856,9 +851,7 @@ body {
   height: 50px;
 }
 
-.hero__button:hover,
-.hero__button:active,
-.hero__button:focus {
+.hero__button:hover, .hero__button:active, .hero__button:focus {
   background-color: #188ce8;
   border-radius: 0px;
 }
@@ -1133,21 +1126,13 @@ body {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.modal__button:hover,
-.modal__button:active,
-.modal__button:focus {
+.modal__button:hover, .modal__button:active, .modal__button:focus {
   background-color: #188ce8;
 }
 
 .modal__input:hover ~ .modal__icon-input,
 .modal__input:active ~ .modal__icon-input,
-.modal__input:focus ~ .modal__icon-input,
-.modal__input:hover,
-.modal__input:active,
-.modal__input:focus,
-.modal__comment:hover,
-.modal__comment-input:active,
-.modal__comment-input:focus {
+.modal__input:focus ~ .modal__icon-input, .modal__input:hover, .modal__input:active, .modal__input:focus, .modal__comment:hover, .modal__comment-input:active, .modal__comment-input:focus {
   border-color: #2196f3;
   fill: #188ce8;
 }
@@ -1407,9 +1392,7 @@ body {
   margin-right: 30px;
 }
 
-.clients__item:hover,
-.clients__item:active,
-.clients__item:focus {
+.clients__item:hover, .clients__item:active, .clients__item:focus {
   border-color: #2196f3;
 }
 
@@ -1476,9 +1459,7 @@ body {
   transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1), 250ms box-shadow cubic-bezier(0.4, 0, 0.2, 1), 250ms background-color cubic-bezier(0.4, 0, 0.2, 1), 250ms -webkit-box-shadow cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio__button:hover,
-.portfolio__button:focus,
-.portfolio__button:active {
+.portfolio__button:hover, .portfolio__button:focus, .portfolio__button:active {
   background-color: #2196f3;
   color: #ffffff;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -1580,9 +1561,7 @@ body {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.portfolio__link:hover,
-.portfolio__link:focus,
-.portfolio__link:active {
+.portfolio__link:hover, .portfolio__link:focus, .portfolio__link:active {
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
