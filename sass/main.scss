@@ -1,10 +1,10 @@
-@import './utils/modern-normalize';
-@import './utils/variables';
-@import './utils/default_styles';
-@import './utils/tytle_styles';
-@import './utils/buttons';
-@import './utils/icons';
-@import './utils/animation';
+@import '../sass/utils/modern-normalize';
+@import '../sass/utils/variables';
+@import '../sass/utils/default_styles';
+@import '../sass/utils/tytle_styles';
+@import '../sass/utils/buttons';
+@import '../sass/utils/icons';
+@import '../sass/utils/animation';
 @import '../sass/components/studio_header';
 @import '../sass/components/studio_footer';
 @import '../sass/components/studio_hero';
