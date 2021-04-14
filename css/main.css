@@ -672,9 +672,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-.footer__link:hover,
-.footer__link:active,
-.footer__link:focus {
+.footer__link:hover, .footer__link:active, .footer__link:focus {
   color: #2196f3;
 }
 
@@ -737,9 +735,7 @@ body {
   height: 44px;
 }
 
-.footer__link-social:hover,
-.footer__link-social:active,
-.footer__link-social:focus {
+.footer__link-social:hover, .footer__link-social:active, .footer__link-social:focus {
   background-color: #2196f3;
 }
 
@@ -778,9 +774,7 @@ body {
   transition: 250ms filter cubic-bezier(0.4, 0, 0.2, 1), 250ms -webkit-filter cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__input:hover,
-.footer__input:active,
-.footer__input:focus {
+.footer__input:hover, .footer__input:active, .footer__input:focus {
   border: 1px solid #2196f3;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -798,9 +792,7 @@ body {
   transition: 250ms filter cubic-bezier(0.4, 0, 0.2, 1), 250ms -webkit-filter cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer__button:hover,
-.footer__button:active,
-.footer__button:focus {
+.footer__button:hover, .footer__button:active, .footer__button:focus {
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
