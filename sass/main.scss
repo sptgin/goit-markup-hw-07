@@ -1,4 +1,16 @@
-body {
-  background-color: green;
-  color: red;
-}
+@import './utils/modern-normalize';
+@import './utils/variables';
+@import './utils/default_styles';
+@import './utils/tytle_styles';
+@import './utils/buttons';
+@import './utils/icons';
+@import './utils/animation';
+@import './components/studio_header';
+@import './components/studio_footer';
+@import './components/studio_hero';
+@import './components/studio_modal';
+@import './components/studio_features';
+@import './components/studio_functions';
+@import './components/studio_team';
+@import './components/studio_clients';
+@import './components/studio_portfolio';

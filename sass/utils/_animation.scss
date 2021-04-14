@@ -1,0 +1,18 @@
+.animation__color {
+  transition: 250ms color cubic-bezier(0.4, 0, 0.2, 1);
+}
+.animation__background-color {
+  transition: 250ms background-color cubic-bezier(0.4, 0, 0.2, 1);
+}
+.animation__border-color {
+  transition: 250ms border-color cubic-bezier(0.4, 0, 0.2, 1);
+}
+.animation__fill {
+  transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
+}
+.animation__opacity {
+  transition: 250ms opacity cubic-bezier(0.4, 0, 0.2, 1);
+}
+.animation__filter {
+  transition: 250ms filter cubic-bezier(0.4, 0, 0.2, 1);
+}
