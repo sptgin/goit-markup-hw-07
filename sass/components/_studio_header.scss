@@ -2,43 +2,45 @@
   background-color: $body-default-background-color;
   border-bottom: 1px solid $header-border-color;
 
-  &__link-logo {
+  .header__link-logo {
     display: block;
     text-decoration: none;
     margin-right: 93px;
   }
-  &__link-logo-color {
+  .header__link-logo-color {
     color: $body-dark-header-color;
   }
-  &__navigation {
+  .header__navigation {
     display: flex;
     align-items: center;
   }
-  &__list {
+  .header__list {
     list-style: none;
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
     padding: 0;
   }
-  &__list-margin {
+  .header__list-margin {
     margin-left: auto;
   }
-  &__list-center {
+  .header__list-center {
     align-items: center;
   }
-  &__item-menu-margin:not(:last-child) {
+  .header__item-menu-margin:not(:last-child) {
     margin-right: 50px;
   }
-  &__item-address-margin:not(:last-child) {
+  .header__item-address-margin:not(:last-child) {
     margin-right: 30px;
   }
-  &__link-navigation {
+  .header__link-navigation {
+    @include transition-color;
     position: relative;
     display: block;
     text-decoration: none;
   }
-  &__link-navigation::after {
+  .header__link-navigation::after {
+    @include transition-opacity;
     content: '';
     position: absolute;
     display: block;
@@ -49,34 +51,35 @@
     bottom: -1px;
     background-color: $body-default-logo-color;
     opacity: 0;
-    transition: 250ms opacity cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__link-navigation.current,
-  &__link-navigation:hover,
-  &__link-navigation:active,
-  &__link-navigation:focus {
+  .header__link-navigation.current,
+  .header__link-navigation:hover,
+  .header__link-navigation:active,
+  .header__link-navigation:focus {
     color: $body-default-logo-color;
   }
-  &__link-navigation.current::after {
+  .header__link-navigation.current::after {
     opacity: 1;
   }
-  &__link-address {
+  .header__link-address {
+    @include transition-color;
     display: flex;
     align-items: center;
     text-decoration: none;
   }
-  &__icon {
+  .header__icon {
+    @include transition-fill;
     fill: $body-default-icon-color;
     margin-right: 10px;
   }
-  &__link-address:hover,
-  &__link-address:active,
-  &__link-address:focus {
+  .header__link-address:hover,
+  .header__link-address:active,
+  .header__link-address:focus {
     color: $body-default-logo-color;
   }
-  &__link-address:hover &__icon,
-  &__link-address:active &__icon,
-  &__link-address:focus &__icon {
+  .header__link-address:hover .header__icon,
+  .header__link-address:active .header__icon,
+  .header__link-address:focus .header__icon {
     fill: $body-default-logo-color;
   }
 }

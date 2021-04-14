@@ -5,23 +5,23 @@
   padding-bottom: 60px;
   background-color: $footer-background-color;
 
-  &__body {
+  .footer__body {
     display: flex;
     align-items: baseline;
   }
-  &__link-logo {
+  .footer__link-logo {
     display: inline-block;
     text-decoration: none;
     margin-right: 0;
     margin-bottom: 20px;
   }
-  &__link-logo-color {
+  .footer__link-logo-color {
     color: $body-light-text-color;
   }
-  &__address {
+  .footer__address {
     margin-right: 70px;
   }
-  &__list {
+  .footer__list {
     display: flex;
     padding-left: 0;
     padding-right: 0;
@@ -30,35 +30,36 @@
     flex-direction: column;
     list-style: none;
   }
-  &__item:not(:last-child) {
+  .footer__item:not(:last-child) {
     margin-bottom: 9px;
   }
-  &__link {
+  .footer__link {
+    @include transition-color;
     text-decoration: none;
   }
-  &__link-light {
+  .footer__link-light {
     color: $body-light-text-color;
   }
-  &__link-dark {
+  .footer__link-dark {
     color: $footer-text-color;
   }
-  &__link:hover,
-  &__link:active,
-  &__link:focus {
+  .footer__link:hover,
+  .footer__link:active,
+  .footer__link:focus {
     color: $body-default-logo-color;
   }
-  &__social {
+  .footer__social {
     margin-top: 0;
     margin-bottom: 0;
   }
-  &__title {
+  .footer__title {
     margin-top: 0;
     margin-bottom: 20px;
     padding-top: 0;
     padding-bottom: 0;
     color: $body-light-text-color;
   }
-  &__list-social {
+  .footer__list-social {
     display: inline-flex;
     list-style: none;
     padding-left: 0;
@@ -66,7 +67,7 @@
     margin-top: 0;
     margin-bottom: 0;
   }
-  &__item-social {
+  .footer__item-social {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -75,10 +76,11 @@
     width: 44px;
     height: 44px;
   }
-  &__item-social:not(:last-child) {
+  .footer__item-social:not(:last-child) {
     margin-right: 10px;
   }
-  &__link-social {
+  .footer__link-social {
+    @include transition-background-color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,19 +88,20 @@
     width: 44px;
     height: 44px;
   }
-  &__link-social:hover,
-  &__link-social:active,
-  &__link-social:focus {
+  .footer__link-social:hover,
+  .footer__link-social:active,
+  .footer__link-social:focus {
     background-color: $body-default-logo-color;
   }
-  &__icon {
+  .footer__icon {
+    @include transition-fill;
     fill: $body-light-text-color;
   }
-  &__form {
+  .footer__form {
     margin-right: 0;
     margin-left: auto;
   }
-  &__label {
+  .footer__label {
     display: block;
     margin-top: 0;
     margin-bottom: 20px;
@@ -106,7 +109,8 @@
     padding-bottom: 0;
     color: $body-light-text-color;
   }
-  &__input {
+  .footer__input {
+    @include transition-border-color;
     width: 358px;
     height: 50px;
     padding: 15px 16px 15px 16px;
@@ -118,30 +122,30 @@
     background: $footer-background-color;
     transition: 250ms filter cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__input:hover,
-  &__input:active,
-  &__input:focus {
+  .footer__input:hover,
+  .footer__input:active,
+  .footer__input:focus {
     border: 1px solid $body-default-logo-color;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   }
-  &__button {
+  .footer__button {
     width: 200px;
     height: 50px;
     padding: 0 0 0 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: 250ms filter cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__button:hover,
-  &__button:active,
-  &__button:focus {
+  .footer__button:hover,
+  .footer__button:active,
+  .footer__button:focus {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
-  &__label-button {
+  .footer__label-button {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  &__icon-button {
+  .footer__icon-button {
     width: 24px;
     height: 24px;
     margin-left: 10px;

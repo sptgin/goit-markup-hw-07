@@ -4,7 +4,7 @@
   padding-bottom: 94px;
   background-color: $body-default-background-color;
 
-  &__list {
+  .features__list {
     display: flex;
     margin-top: 0;
     margin-bottom: 0;
@@ -12,29 +12,29 @@
     padding-right: 0;
     list-style: none;
   }
-  &__item {
+  .features__item {
     display: block;
     margin-top: 0;
     margin-bottom: 0px;
     width: 270px;
   }
-  &__item:not(:last-child) {
+  .features__item:not(:last-child) {
     margin-right: 30px;
   }
-  &__title {
+  .features__title {
     margin-top: 0;
     margin-bottom: 10px;
   }
-  &__text {
+  .features__text {
     margin-top: 0;
     margin-bottom: 0;
   }
-  &__icon {
+  .features__icon {
     width: 70px;
     height: 70px;
     fill: $body-default-header-color;
   }
-  &__view {
+  .features__view {
     display: flex;
     justify-content: center;
     align-items: center;

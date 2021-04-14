@@ -4,11 +4,11 @@
   padding-bottom: 94px;
   background-color: $body-light-background-color;
 
-  &__title {
+  .team__title {
     margin-top: 0;
     margin-bottom: 50px;
   }
-  &__list {
+  .team__list {
     display: flex;
     list-style: none;
     padding-left: 0;
@@ -16,12 +16,12 @@
     margin-top: 0;
     margin-bottom: 0;
   }
-  &__list img {
+  .team__list img {
     display: block;
     margin-top: 0;
     margin-bottom: 0;
   }
-  &__item {
+  .team__item {
     display: block;
     width: 270px;
     background-color: $body-default-background-color;
@@ -29,22 +29,22 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
   }
-  &__item:not(:last-child) {
+  .team__item:not(:last-child) {
     margin-right: 30px;
   }
-  &__label {
+  .team__label {
     text-align: center;
     padding: 30px 20px 30px 20px;
   }
-  &__name {
+  .team__name {
     margin-top: 0;
     margin-bottom: 0;
   }
-  &__text {
+  .team__text {
     margin-top: 10px;
     margin-bottom: 0;
   }
-  &__list-social {
+  .team__list-social {
     display: inline-flex;
     list-style: none;
     padding-left: 0;
@@ -52,7 +52,8 @@
     margin-top: 16px;
     margin-bottom: 0;
   }
-  &__link-social {
+  .team__link-social {
+    @include transition-background-color;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,20 +61,21 @@
     width: 44px;
     height: 44px;
   }
-  &__item-social:not(:last-child) {
+  .team__item-social:not(:last-child) {
     margin-right: 10px;
   }
-  &__icon {
+  .team__icon {
+    @include transition-fill;
     fill: $body-default-icon-color;
   }
-  &__link-social:hover .team__icon,
-  &__link-social:active .team__icon,
-  &__link-social:focus .team__icon {
+  .team__link-social:hover .team__icon,
+  .team__link-social:active .team__icon,
+  .team__link-social:focus .team__icon {
     fill: $body-light-text-color;
   }
-  &__link-social:hover,
-  &__link-social:active,
-  &__link-social:focus {
+  .team__link-social:hover,
+  .team__link-social:active,
+  .team__link-social:focus {
     background-color: $body-default-logo-color;
   }
 }

@@ -5,11 +5,11 @@
   padding-bottom: 94px;
   background-color: $body-default-background-color;
 
-  &__title {
+  .clients__title {
     margin-top: 0;
     margin-bottom: 50px;
   }
-  &__list {
+  .clients__list {
     display: flex;
     list-style: none;
     text-align: center;
@@ -18,37 +18,38 @@
     margin-top: 0;
     margin-bottom: 0;
   }
-  &__item {
+  .clients__item {
+    @include transition-border-color;
     display: block;
     height: 90px;
     width: 170px;
     border: 1px solid $body-default-icon-color;
     box-sizing: border-box;
     border-radius: 4px;
-    transition: 250ms border-color cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__item:not(:last-child) {
+  .clients__item:not(:last-child) {
     margin-right: 30px;
   }
-  &__item:hover,
-  &__item:active,
-  &__item:focus {
+  .clients__item:hover,
+  .clients__item:active,
+  .clients__item:focus {
     border-color: $body-default-logo-color;
   }
-  &__icon {
+  .clients__icon {
+    @include transition-fill;
     fill: $body-default-icon-color;
   }
 
-  &__link {
+  .clients__link {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 170px;
     height: 90px;
   }
-  &__link:hover &__icon,
-  &__link:active &__icon,
-  &__link:focus &__icon {
+  .clients__link:hover .clients__icon,
+  .clients__link:active .clients__icon,
+  .clients__link:focus .clients__icon {
     fill: $body-default-logo-color;
   }
 }

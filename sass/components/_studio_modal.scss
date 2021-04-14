@@ -1,5 +1,6 @@
 /* Модальное окно "Заказать услугу" */
 .modal__backdrop {
+  @include transition-opacity;
   position: fixed;
   top: 0;
   left: 0;
@@ -7,7 +8,6 @@
   height: 100%;
   z-index: 99;
   background: $main-hero-background-blackdrop;
-  transition: 250ms opacity cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal__backdrop.is-hidden {
   opacity: 0;
@@ -28,14 +28,14 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  &__close {
+  .modal__close {
     display: flex;
     justify-content: flex-end;
     margin-top: 8px;
     margin-bottom: 2px;
     margin-right: 8px;
   }
-  &__button-close {
+  .modal__button-close {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -46,47 +46,47 @@
     width: 30px;
     height: 30px;
   }
-  &__icon-close {
+  .modal__icon-close {
+    @include transition-fill;
     width: 11px;
     height: 11px;
     fill: black;
-    transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__button-close:hover &__icon-close {
+  .modal__button-close:hover .modal__icon-close {
+    @include transition-fill;
     fill: $body-default-logo-color;
-    transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__header {
+  .modal__header {
     display: block;
     margin-top: 0;
     margin-bottom: 12px;
     padding: 0 0 0 0;
   }
-  &__form {
+  .modal__form {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  &__group {
+  .modal__group {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
   }
-  &__input-label {
+  .modal__input-label {
     position: relative;
     display: flex;
     flex-direction: column;
     cursor: pointer;
     margin-bottom: 10px;
   }
-  &__comment-label {
+  .modal__comment-label {
     display: flex;
     flex-direction: column;
     cursor: pointer;
     margin-bottom: 0px;
   }
-  &__checkbox-label {
+  .modal__checkbox-label {
     position: relative;
     display: flex;
     align-items: baseline;
@@ -94,7 +94,7 @@
     width: 448px;
     margin-bottom: 30px;
   }
-  &__input-text {
+  .modal__input-text {
     margin-top: 0;
     margin-bottom: 4px;
     padding: 0 0 0 0;
@@ -104,7 +104,7 @@
     letter-spacing: 0.01em;
     color: $body-default-text-color;
   }
-  &__checkbox-text {
+  .modal__checkbox-text {
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 7px;
@@ -115,7 +115,8 @@
     letter-spacing: 0.03em;
     color: $body-default-text-color;
   }
-  &__input {
+  .modal__input {
+    @include transition-border-color;
     width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -124,9 +125,9 @@
     cursor: pointer;
     border-radius: 4px;
     padding: 11px 12px 11px 42px;
-    transition: 250ms border-color cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__icon-input {
+  .modal__icon-input {
+    @include transition-fill;
     position: absolute;
     top: 50%;
     left: 0;
@@ -134,18 +135,18 @@
     height: 18px;
     margin-left: 12px;
     fill: $body-default-header-color;
-    transition: 250ms fill cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__icon-checkbox {
+  .modal__icon-checkbox {
+    @include transition-opacity;
     position: absolute;
     top: 18%;
     left: 12px;
     width: 16px;
     height: 15px;
     fill: $body-default-header-color;
-    transition: 250ms opacity cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__icon-checkbox-checked {
+  .modal__icon-checkbox-checked {
+    @include transition-opacity;
     position: absolute;
     top: 18%;
     left: 12px;
@@ -153,9 +154,9 @@
     height: 15px;
     fill: $body-default-header-color;
     opacity: 0;
-    transition: 250ms opacity cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__comment {
+  .modal__comment {
+    @include transition-border-color;
     width: 448px;
     height: 120px;
     padding: 12px 16px 12px 16px;
@@ -170,45 +171,45 @@
     line-height: 1.14;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
-    transition: 250ms border-color cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &__checkbox {
+  .modal__checkbox {
     opacity: 0;
     margin-right: 7px;
   }
-  &__checkbox:checked ~ &__icon-checkbox {
+  .modal__checkbox:checked ~ .modal__icon-checkbox {
     opacity: 0;
   }
-  &__checkbox:checked ~ &__icon-checkbox-checked {
+  .modal__checkbox:checked ~ .modal__icon-checkbox-checked {
     opacity: 1;
   }
 
-  &__link {
+  .modal__link {
     color: $body-default-logo-color;
   }
 
-  &__button {
+  .modal__button {
+    @include transition-background-color;
     width: 200px;
     height: 50px;
     padding: 0 0 0 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
 
-  &__button:hover,
-  &__button:active,
-  &__button:focus {
+  .modal__button:hover,
+  .modal__button:active,
+  .modal__button:focus {
     background-color: $main-button-hover-color;
   }
 
-  &__input:hover ~ &__icon-input,
-  &__input:active ~ &__icon-input,
-  &__input:focus ~ &__icon-input,
-  &__input:hover,
-  &__input:active,
-  &__input:focus,
-  &__comment:hover,
-  &__comment-input:active,
-  &__comment-input:focus {
+  .modal__input:hover ~ .modal__icon-input,
+  .modal__input:active ~ .modal__icon-input,
+  .modal__input:focus ~ .modal__icon-input,
+  .modal__input:hover,
+  .modal__input:active,
+  .modal__input:focus,
+  .modal__comment:hover,
+  .modal__comment-input:active,
+  .modal__comment-input:focus {
     border-color: $body-default-logo-color;
     fill: $main-button-hover-color;
   }

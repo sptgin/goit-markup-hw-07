@@ -4,15 +4,15 @@
   padding-bottom: 94px;
   background-color: $body-default-background-color;
 
-  &__title {
+  .functions__title {
     margin-top: 0;
     margin-bottom: 50px;
   }
-  &__text {
+  .functions__text {
     margin-top: 0;
     margin-bottom: 0;
   }
-  &__list {
+  .functions__list {
     list-style: none;
     display: flex;
     padding-left: 0;
@@ -20,18 +20,18 @@
     margin-top: 0;
     margin-bottom: 0;
   }
-  &__list img {
+  .functions__list img {
     display: block;
     margin-top: 0;
     margin-bottom: 0;
   }
-  &__item {
+  .functions__item {
     position: relative;
   }
-  &__item:not(:last-child) {
+  .functions__item:not(:last-child) {
     margin-right: 30px;
   }
-  &__label {
+  .functions__label {
     position: absolute;
     bottom: 0;
     left: 0;

@@ -18,18 +18,19 @@
   background-position: top left;
   background-size: cover;
 
-  &__title {
+  .hero__title {
     margin-top: 0;
     margin-bottom: 30px;
     padding-bottom: 0;
   }
-  &__button {
+  .hero__button {
+    @include transition-background-color;
     width: 200px;
     height: 50px;
   }
-  &__button:hover,
-  &__button:active,
-  &__button:focus {
+  .hero__button:hover,
+  .hero__button:active,
+  .hero__button:focus {
     background-color: $main-button-hover-color;
     border-radius: 0px;
   }
