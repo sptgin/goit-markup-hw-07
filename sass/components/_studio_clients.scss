@@ -31,9 +31,9 @@
     &:focus {
       border-color: $body-default-logo-color;
     }
-  }
-  .clients__item:not(:last-child) {
-    margin-right: 30px;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
 
   .clients__icon {
