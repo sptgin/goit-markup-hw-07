@@ -747,6 +747,10 @@ body {
 }
 
 .footer .footer__input {
+  -webkit-transition: 250ms -webkit-filter cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms -webkit-filter cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms filter cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms filter cubic-bezier(0.4, 0, 0.2, 1), 250ms -webkit-filter cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-transition: 250ms border-color cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms border-color cubic-bezier(0.4, 0, 0.2, 1);
   width: 358px;
@@ -759,10 +763,6 @@ body {
   border-radius: 4px;
   outline: none;
   background: #2f303a;
-  -webkit-transition: 250ms -webkit-filter cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms -webkit-filter cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms filter cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms filter cubic-bezier(0.4, 0, 0.2, 1), 250ms -webkit-filter cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .footer__input:hover,
@@ -774,15 +774,15 @@ body {
 }
 
 .footer .footer__button {
+  -webkit-transition: 250ms -webkit-filter cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms -webkit-filter cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms filter cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 250ms filter cubic-bezier(0.4, 0, 0.2, 1), 250ms -webkit-filter cubic-bezier(0.4, 0, 0.2, 1);
   width: 200px;
   height: 50px;
   padding: 0 0 0 0;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  -webkit-transition: 250ms -webkit-filter cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms -webkit-filter cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms filter cubic-bezier(0.4, 0, 0.2, 1);
-  transition: 250ms filter cubic-bezier(0.4, 0, 0.2, 1), 250ms -webkit-filter cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer .footer__button:hover,

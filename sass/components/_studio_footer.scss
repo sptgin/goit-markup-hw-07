@@ -110,6 +110,7 @@
     color: $body-light-text-color;
   }
   .footer__input {
+    @include transition-filter;
     @include transition-border-color;
     width: 358px;
     height: 50px;
@@ -120,7 +121,6 @@
     border-radius: 4px;
     outline: none;
     background: $footer-background-color;
-    transition: 250ms filter cubic-bezier(0.4, 0, 0.2, 1);
   }
   .footer__input:hover,
   .footer__input:active,
@@ -129,11 +129,11 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   }
   .footer__button {
+    @include transition-filter;
     width: 200px;
     height: 50px;
     padding: 0 0 0 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-    transition: 250ms filter cubic-bezier(0.4, 0, 0.2, 1);
   }
   .footer__button:hover,
   .footer__button:active,
