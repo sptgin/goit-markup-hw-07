@@ -24,14 +24,14 @@
     padding-bottom: 0;
   }
   .hero__button {
-    @include transition-background-color;
+    @include animation(background-color);
     width: 200px;
     height: 50px;
-  }
-  .hero__button:hover,
-  .hero__button:active,
-  .hero__button:focus {
-    background-color: $main-button-hover-color;
-    border-radius: 0px;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $main-button-hover-color;
+      border-radius: 0px;
+    }
   }
 }

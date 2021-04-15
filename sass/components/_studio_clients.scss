@@ -19,24 +19,25 @@
     margin-bottom: 0;
   }
   .clients__item {
-    @include transition-border-color;
+    @include animation(border-color);
     display: block;
     height: 90px;
     width: 170px;
     border: 1px solid $body-default-icon-color;
     box-sizing: border-box;
     border-radius: 4px;
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: $body-default-logo-color;
+    }
   }
   .clients__item:not(:last-child) {
     margin-right: 30px;
   }
-  .clients__item:hover,
-  .clients__item:active,
-  .clients__item:focus {
-    border-color: $body-default-logo-color;
-  }
+
   .clients__icon {
-    @include transition-fill;
+    @include animation(fill);
     fill: $body-default-icon-color;
   }
 
@@ -46,10 +47,10 @@
     align-items: center;
     width: 170px;
     height: 90px;
-  }
-  .clients__link:hover .clients__icon,
-  .clients__link:active .clients__icon,
-  .clients__link:focus .clients__icon {
-    fill: $body-default-logo-color;
+    &:hover .clients__icon,
+    &:active .clients__icon,
+    &:focus .clients__icon {
+      fill: $body-default-logo-color;
+    }
   }
 }

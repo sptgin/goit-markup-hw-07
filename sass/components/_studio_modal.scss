@@ -1,6 +1,6 @@
 /* Модальное окно "Заказать услугу" */
 .modal__backdrop {
-  @include transition-opacity;
+  @include animation(opacity);
   position: fixed;
   top: 0;
   left: 0;
@@ -47,13 +47,13 @@
     height: 30px;
   }
   .modal__icon-close {
-    @include transition-fill;
+    @include animation(fill);
     width: 11px;
     height: 11px;
     fill: black;
   }
   .modal__button-close:hover .modal__icon-close {
-    @include transition-fill;
+    @include animation(fill);
     fill: $body-default-logo-color;
   }
   .modal__header {
@@ -116,7 +116,7 @@
     color: $body-default-text-color;
   }
   .modal__input {
-    @include transition-border-color;
+    @include animation(border-color);
     width: 448px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -125,9 +125,18 @@
     cursor: pointer;
     border-radius: 4px;
     padding: 11px 12px 11px 42px;
+    &:hover ~ .modal__icon-input,
+    &:active ~ .modal__icon-input,
+    &:focus ~ .modal__icon-input,
+    &:hover,
+    &:active,
+    &:focus {
+      border-color: $body-default-logo-color;
+      fill: $main-button-hover-color;
+    }
   }
   .modal__icon-input {
-    @include transition-fill;
+    @include animation(fill);
     position: absolute;
     top: 50%;
     left: 0;
@@ -137,7 +146,7 @@
     fill: $body-default-header-color;
   }
   .modal__icon-checkbox {
-    @include transition-opacity;
+    @include animation(opacity);
     position: absolute;
     top: 18%;
     left: 12px;
@@ -146,7 +155,7 @@
     fill: $body-default-header-color;
   }
   .modal__icon-checkbox-checked {
-    @include transition-opacity;
+    @include animation(opacity);
     position: absolute;
     top: 18%;
     left: 12px;
@@ -156,7 +165,7 @@
     opacity: 0;
   }
   .modal__comment {
-    @include transition-border-color;
+    @include animation(border-color);
     width: 448px;
     height: 120px;
     padding: 12px 16px 12px 16px;
@@ -171,46 +180,34 @@
     line-height: 1.14;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+    &:hover {
+      border-color: $body-default-logo-color;
+    }
   }
   .modal__checkbox {
     opacity: 0;
     margin-right: 7px;
+    &:checked ~ .modal__icon-checkbox {
+      opacity: 0;
+    }
+    &:checked ~ .modal__icon-checkbox-checked {
+      opacity: 1;
+    }
   }
-  .modal__checkbox:checked ~ .modal__icon-checkbox {
-    opacity: 0;
-  }
-  .modal__checkbox:checked ~ .modal__icon-checkbox-checked {
-    opacity: 1;
-  }
-
   .modal__link {
     color: $body-default-logo-color;
   }
 
   .modal__button {
-    @include transition-background-color;
+    @include animation(background-color);
     width: 200px;
     height: 50px;
     padding: 0 0 0 0;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  }
-
-  .modal__button:hover,
-  .modal__button:active,
-  .modal__button:focus {
-    background-color: $main-button-hover-color;
-  }
-
-  .modal__input:hover ~ .modal__icon-input,
-  .modal__input:active ~ .modal__icon-input,
-  .modal__input:focus ~ .modal__icon-input,
-  .modal__input:hover,
-  .modal__input:active,
-  .modal__input:focus,
-  .modal__comment:hover,
-  .modal__comment-input:active,
-  .modal__comment-input:focus {
-    border-color: $body-default-logo-color;
-    fill: $main-button-hover-color;
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: $main-button-hover-color;
+    }
   }
 }

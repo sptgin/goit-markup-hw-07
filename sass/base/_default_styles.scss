@@ -15,7 +15,6 @@ body {
   color: $body-default-text-color;
 }
 .container {
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -29,4 +28,22 @@ body {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+@media screen and (min-width: $mobile) {
+  .container {
+    max-width: $mobile;
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .container {
+    max-width: $tablet;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .container {
+    max-width: $desktop;
+  }
 }
