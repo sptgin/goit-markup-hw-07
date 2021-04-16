@@ -65,11 +65,11 @@
         margin-bottom: 30px;
       }
     }
-    .features__title {
-      background-color: green;
-    }
     .features__view {
       width: 450px;
+    }
+    .features__title {
+      text-align: center;
     }
   }
 }
@@ -100,6 +100,9 @@
     .features__view {
       width: 354px;
     }
+    .features__title {
+      text-align: left;
+    }
   }
 }
 
@@ -120,11 +123,11 @@
         margin-right: 30px;
       }
     }
-    .features__title {
-      background-color: green;
-    }
     .features__view {
       width: 270px;
+    }
+    .features__title {
+      text-align: left;
     }
   }
 }

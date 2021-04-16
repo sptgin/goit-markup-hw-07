@@ -1227,11 +1227,11 @@ body {
   .features .features__item:not(:last-child) {
     margin-bottom: 30px;
   }
-  .features .features__title {
-    background-color: green;
-  }
   .features .features__view {
     width: 450px;
+  }
+  .features .features__title {
+    text-align: center;
   }
 }
 
@@ -1265,6 +1265,9 @@ body {
   .features .features__view {
     width: 354px;
   }
+  .features .features__title {
+    text-align: left;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1288,11 +1291,11 @@ body {
   .features .features__item:not(:last-child) {
     margin-right: 30px;
   }
-  .features .features__title {
-    background-color: green;
-  }
   .features .features__view {
     width: 270px;
+  }
+  .features .features__title {
+    text-align: left;
   }
 }
 
