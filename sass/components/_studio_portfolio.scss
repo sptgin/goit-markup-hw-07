@@ -22,6 +22,7 @@
     @include animation(color);
     @include animation(box-shadow);
     @include animation(background-color);
+    @extend %title__button-light;
     background-color: $body-light-background-color;
     cursor: pointer;
     border: none;
@@ -63,15 +64,18 @@
     border-top: 0;
   }
   .portfolio__header-about {
+    @extend %title__header-about;
     display: block;
     margin-top: 0;
     margin-bottom: 4px;
   }
   .portfolio__text-about {
+    @extend %title__text-label;
     margin-top: 0;
     margin-bottom: 0;
   }
   .portfolio__description {
+    @extend %title__description;
     position: absolute;
     display: flex;
     align-items: center;

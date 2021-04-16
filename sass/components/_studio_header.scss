@@ -36,6 +36,7 @@
   }
   .header__link-navigation {
     @include animation(color);
+    @extend %title__navigation;
     position: relative;
     display: block;
     text-decoration: none;
@@ -70,6 +71,7 @@
   }
   .header__link-address {
     @include animation(color);
+    @extend %title__address;
     display: flex;
     align-items: center;
     text-decoration: none;

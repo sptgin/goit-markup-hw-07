@@ -23,10 +23,12 @@
   }
 
   .features__title {
+    @extend %title__header-h3;
     margin-top: 0;
     margin-bottom: 10px;
   }
   .features__text {
+    @extend %title__text;
     margin-top: 0;
     margin-bottom: 0;
   }

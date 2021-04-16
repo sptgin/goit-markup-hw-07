@@ -5,6 +5,7 @@
   background-color: $body-light-background-color;
 
   .team__title {
+    @extend %title__header-h2;
     margin-top: 0;
     margin-bottom: 50px;
   }
@@ -37,10 +38,12 @@
     padding: 30px 20px 30px 20px;
   }
   .team__name {
+    @extend %title__header-name;
     margin-top: 0;
     margin-bottom: 0;
   }
   .team__text {
+    @extend %title__text-label;
     margin-top: 10px;
     margin-bottom: 0;
   }

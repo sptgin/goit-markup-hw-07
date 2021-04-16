@@ -57,6 +57,7 @@
     fill: $body-default-logo-color;
   }
   .modal__header {
+    @extend %title__header-modal;
     display: block;
     margin-top: 0;
     margin-bottom: 12px;
@@ -199,6 +200,7 @@
   }
 
   .modal__button {
+    @extend %title__button;
     @include animation(background-color);
     width: 200px;
     height: 50px;

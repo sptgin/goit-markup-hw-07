@@ -5,10 +5,12 @@
   background-color: $body-default-background-color;
 
   .functions__title {
+    @extend %title__header-h2;
     margin-top: 0;
     margin-bottom: 50px;
   }
   .functions__text {
+    @extend %title__header-light;
     margin-top: 0;
     margin-bottom: 0;
   }

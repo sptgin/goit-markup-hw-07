@@ -10,6 +10,7 @@
     align-items: baseline;
   }
   .footer__link-logo {
+    @extend %title__logo;
     display: inline-block;
     text-decoration: none;
     margin-right: 0;
@@ -34,6 +35,7 @@
     margin-bottom: 9px;
   }
   .footer__link {
+    @extend %title__text;
     @include animation(color);
     text-decoration: none;
     &:hover,
@@ -54,6 +56,7 @@
     margin-bottom: 0;
   }
   .footer__title {
+    @extend %title__header-h3;
     margin-top: 0;
     margin-bottom: 20px;
     padding-top: 0;
@@ -103,6 +106,7 @@
     margin-left: auto;
   }
   .footer__label {
+    @extend %title__header-h3;
     display: block;
     margin-top: 0;
     margin-bottom: 20px;
@@ -113,6 +117,7 @@
   .footer__input {
     @include animation(filter);
     @include animation(border-color);
+    @extend %title__input;
     width: 358px;
     height: 50px;
     padding: 15px 16px 15px 16px;
@@ -130,6 +135,7 @@
     }
   }
   .footer__button {
+    @extend %title__button;
     @include animation(filter);
     width: 200px;
     height: 50px;
