@@ -1,9 +1,8 @@
 /* Секция "Особенности" */
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  /*padding-top: 94px;
+  padding-bottom: 94px;*/
   background-color: $body-default-background-color;
-
   .features__list {
     /*display: flex;*/
     margin-top: 0;
@@ -16,12 +15,11 @@
     display: block;
     margin-top: 0;
     margin-bottom: 0px;
-    width: 270px;
-    &:not(:last-child) {
+    /*width: 270px;*/
+    /*&:not(:last-child) {
       margin-right: 30px;
-    }
+    }*/
   }
-
   .features__title {
     @extend %title__header-h3;
     margin-top: 0;
@@ -50,30 +48,83 @@
 }
 @media screen and (min-width: $mobile) {
   .features {
-    padding: 0 0 0 0;
+    padding-top: $section-padding-mobile;
+    padding-bottom: $section-padding-mobile;
     .features__list {
-      display: inline-block;
-      margin-left: 0;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
       margin-bottom: 0;
+    }
+    .features__item {
+      display: block;
+      margin-top: 0;
+      margin-bottom: 0px;
+      width: 450px;
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+    .features__title {
+      background-color: green;
+    }
+    .features__view {
+      width: 450px;
     }
   }
 }
 
 @media screen and (min-width: $tablet) {
   .features {
-    padding: 0 0 0 0;
+    padding-top: $section-padding-mobile;
+    padding-bottom: $section-padding-mobile;
     .features__list {
       display: flex;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 0;
+    }
+    .features__item {
+      display: block;
+      margin-top: 0;
+      margin-bottom: 0px;
+      width: 354px;
+      &:not(:nth-child(2n)) {
+        margin-right: 30px;
+      }
+      &:not(:nth-last-child(-n + 2)) {
+        margin-bottom: 30px;
+      }
+    }
+    .features__view {
+      width: 354px;
     }
   }
 }
 
 @media screen and (min-width: $desktop) {
   .features {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding-top: $section-padding-desktop;
+    padding-bottom: $section-padding-desktop;
     .features__list {
       display: flex;
+      flex-wrap: nowrap;
+    }
+    .features__item {
+      display: block;
+      margin-top: 0;
+      margin-bottom: 0px;
+      width: 270px;
+      &:not(:last-child) {
+        margin-right: 30px;
+      }
+    }
+    .features__title {
+      background-color: green;
+    }
+    .features__view {
+      width: 270px;
     }
   }
 }
